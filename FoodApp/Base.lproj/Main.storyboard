@@ -1,24 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24123.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24062"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8g2-90-9Vk">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="806"/>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pIX-ZG-3YX">
+                                    <size key="itemSize" width="158" height="163"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellFood" id="hhg-aq-gkq" customClass="CVCFood" customModule="FoodApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="158" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lOU-pr-nvY">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="163"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coffee_pot" translatesAutoresizingMaskIntoConstraints="NO" id="Lh0-48-sVi">
+                                                    <rect key="frame" x="18" y="8" width="115" height="118"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="115" id="HLJ-Kv-Uwq"/>
+                                                        <constraint firstAttribute="height" constant="118" id="M0Y-yv-taz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl8-io-5Eo">
+                                                    <rect key="frame" x="18" y="134" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Lh0-48-sVi" firstAttribute="top" secondItem="lOU-pr-nvY" secondAttribute="top" constant="8" id="1Ki-mx-rkw"/>
+                                                <constraint firstItem="hl8-io-5Eo" firstAttribute="leading" secondItem="Lh0-48-sVi" secondAttribute="leading" id="1xc-9t-IZP"/>
+                                                <constraint firstItem="hl8-io-5Eo" firstAttribute="trailing" secondItem="Lh0-48-sVi" secondAttribute="trailing" id="AUQ-Rs-ukF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lh0-48-sVi" secondAttribute="trailing" constant="25" id="CHa-ud-erH"/>
+                                                <constraint firstAttribute="bottom" secondItem="hl8-io-5Eo" secondAttribute="bottom" constant="8" id="RgC-vu-KUk"/>
+                                                <constraint firstItem="Lh0-48-sVi" firstAttribute="leading" secondItem="lOU-pr-nvY" secondAttribute="leading" constant="18" id="cJx-7g-fCE"/>
+                                                <constraint firstItem="hl8-io-5Eo" firstAttribute="top" secondItem="Lh0-48-sVi" secondAttribute="bottom" constant="8" symbolic="YES" id="glW-73-lhP"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="158" height="163"/>
+                                        <connections>
+                                            <outlet property="iv_FoodImage" destination="Lh0-48-sVi" id="rg1-nh-zYJ"/>
+                                            <outlet property="laFoodName" destination="hl8-io-5Eo" id="qrO-uP-RKg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T2r-Dp-UyC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8g2-90-9Vk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1OB-fj-3er"/>
+                            <constraint firstItem="8g2-90-9Vk" firstAttribute="bottom" secondItem="T2r-Dp-UyC" secondAttribute="bottom" id="JCJ-3F-WG3"/>
+                            <constraint firstItem="8g2-90-9Vk" firstAttribute="trailing" secondItem="T2r-Dp-UyC" secondAttribute="trailing" id="eXU-ga-RSs"/>
+                            <constraint firstItem="8g2-90-9Vk" firstAttribute="leading" secondItem="T2r-Dp-UyC" secondAttribute="leading" id="mxw-sG-o7G"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cvListOfFoods" destination="8g2-90-9Vk" id="ZKu-90-C6U"/>
+                        <segue destination="hx1-DM-CRD" kind="presentation" identifier="showDetails" id="K2W-kk-YBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-363.76811594202906" y="73.369565217391312"/>
+        </scene>
+        <!--Food Details-->
+        <scene sceneID="BgU-Ge-hkN">
+            <objects>
+                <viewController id="hx1-DM-CRD" customClass="VCFoodDetails" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ic-J8-P3l" customClass="VC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJB-IK-aIt">
+                                <rect key="frame" x="0.0" y="81" width="402" height="54"/>
+                                <items>
+                                    <navigationItem id="oen-kr-jsW">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0XW-Du-Y0y">
+                                            <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="buBack:" destination="hx1-DM-CRD" id="aBW-OE-BnF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-3I-pzJ">
+                                <rect key="frame" x="20" y="373.66666666666674" width="362" height="418.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-6y-DlA">
+                                <rect key="frame" x="24" y="326" width="341.33333333333331" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Espresso" translatesAutoresizingMaskIntoConstraints="NO" id="2Vh-48-2sS">
+                                <rect key="frame" x="20" y="156" width="341.33333333333331" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hdA-h5-5sQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ghb-85-1Cb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zAx-3I-pzJ" firstAttribute="top" secondItem="ahc-6y-DlA" secondAttribute="bottom" constant="20.666666666666742" id="6dG-dz-Ddp"/>
+                            <constraint firstItem="zJB-IK-aIt" firstAttribute="trailing" secondItem="ghb-85-1Cb" secondAttribute="trailing" id="8Lp-2Z-jx3"/>
+                            <constraint firstItem="ghb-85-1Cb" firstAttribute="trailing" secondItem="ahc-6y-DlA" secondAttribute="trailing" constant="36.666666666666686" id="Chw-zy-Z4N"/>
+                            <constraint firstItem="zAx-3I-pzJ" firstAttribute="leading" secondItem="ghb-85-1Cb" secondAttribute="leading" constant="20" id="FEN-K0-IaU"/>
+                            <constraint firstItem="ahc-6y-DlA" firstAttribute="top" secondItem="2Vh-48-2sS" secondAttribute="bottom" constant="20" id="Oh3-ze-aBS"/>
+                            <constraint firstItem="2Vh-48-2sS" firstAttribute="leading" secondItem="zAx-3I-pzJ" secondAttribute="leading" id="YVO-JY-CAf"/>
+                            <constraint firstItem="ahc-6y-DlA" firstAttribute="leading" secondItem="ghb-85-1Cb" secondAttribute="leading" constant="24" id="bHJ-53-BtO"/>
+                            <constraint firstItem="ghb-85-1Cb" firstAttribute="trailing" secondItem="zAx-3I-pzJ" secondAttribute="trailing" constant="20" id="dp4-YL-ntd"/>
+                            <constraint firstItem="zJB-IK-aIt" firstAttribute="leading" secondItem="ghb-85-1Cb" secondAttribute="leading" id="gY7-4G-qDW"/>
+                            <constraint firstItem="2Vh-48-2sS" firstAttribute="top" secondItem="zJB-IK-aIt" secondAttribute="bottom" constant="21" id="gsk-PO-51k"/>
+                            <constraint firstItem="ghb-85-1Cb" firstAttribute="bottom" secondItem="zAx-3I-pzJ" secondAttribute="bottom" constant="20" id="jQl-a9-f5C"/>
+                            <constraint firstItem="zJB-IK-aIt" firstAttribute="top" secondItem="ghb-85-1Cb" secondAttribute="top" constant="19" id="jlt-Rz-CBi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K9m-pU-p2U"/>
+                    <connections>
+                        <outlet property="iv_FoodImage" destination="2Vh-48-2sS" id="Tqi-XQ-LCV"/>
+                        <outlet property="laFoodDes" destination="zAx-3I-pzJ" id="vp5-4H-N5Q"/>
+                        <outlet property="laFoodName" destination="ahc-6y-DlA" id="eeB-R5-dxz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9M-vy-Y1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273.75" y="70.774647887323951"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Coffee_pot" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Espresso" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

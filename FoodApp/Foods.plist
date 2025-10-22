@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+
+    <dict>
+        <key>Name</key>
+        <string>Coffee</string>
+        <key>Image</key>
+        <string>Coffee_pot</string>
+        <key>Des</key>
+        <string>
+Coffee is one of the world’s favorite beverages, known for its rich aroma and energizing effect. Brewed from roasted coffee beans, it helps boost focus and alertness, making it a perfect morning drink. Coffee can be enjoyed in many ways—black, with milk, sugar, or flavored syrups. It also contains antioxidants that may support heart health and metabolism. Many people associate coffee with creativity, warmth, and social connection. Whether served hot or iced, it’s more than just a drink—it’s a comforting daily ritual that kickstarts the day and brings people together in cafes and homes alike.
+        </string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Espresso</string>
+        <key>Image</key>
+        <string>Espresso</string>
+        <key>Des</key>
+        <string>
+Espresso is a concentrated coffee drink brewed by forcing hot water through finely-ground coffee beans under high pressure. It forms the base for many popular drinks like cappuccino, latte, and macchiato. Known for its bold flavor and creamy crema layer on top, espresso delivers a strong energy boost in a small shot. It’s deeply aromatic, slightly bitter, and loved by coffee enthusiasts who enjoy its intensity. Originating from Italy, espresso represents passion and craftsmanship. Whether enjoyed alone or as part of a recipe, it’s a symbol of refined taste, precision, and the artistry of coffee brewing.
+        </string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>French Fries</string>
+        <key>Image</key>
+        <string>French_fries</string>
+        <key>Des</key>
+        <string>
+French fries are crispy, golden potato sticks loved by people of all ages. Usually deep-fried and lightly salted, they’re served as a side dish or snack with burgers, sandwiches, or ketchup. Originating in Europe, they’ve become a global comfort food symbol. The perfect fry is crispy on the outside and soft inside, offering a satisfying crunch with every bite. Whether thick-cut or shoestring, French fries can be seasoned with cheese, herbs, or spices. They bring a sense of joy and nostalgia, reminding people of family meals, movie nights, and carefree moments shared with friends.
+        </string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Honey</string>
+        <key>Image</key>
+        <string>Honey</string>
+        <key>Des</key>
+        <string>
+Honey is a natural sweetener made by bees from flower nectar. It’s golden, thick, and packed with flavor and nutrients. For centuries, honey has been valued not only for its taste but also for its healing and antibacterial properties. It can soothe a sore throat, boost energy, and even help with skin care. Honey’s sweetness pairs beautifully with tea, desserts, and breakfast foods like pancakes and yogurt. Each type of honey has a unique aroma depending on the flowers it comes from. A spoonful of honey brings warmth, comfort, and a touch of nature’s goodness to any day.
+        </string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Strawberry Ice Cream</string>
+        <key>Image</key>
+        <string>Strawberry_ice_cream</string>
+        <key>Des</key>
+        <string>
+Strawberry ice cream is a refreshing dessert made from fresh strawberries, cream, and sugar, creating a perfect blend of sweetness and fruitiness. Its pink color and smooth texture make it visually and tastefully delightful. Loved by children and adults alike, it’s a summertime favorite that brings back joyful memories. Whether served in a cone, bowl, or alongside cake, it adds a cheerful touch to any meal. The natural strawberry flavor provides a cool, creamy escape on hot days. Each spoonful is a reminder of happiness, love, and the simple pleasures that make life beautifully sweet.
+        </string>
+    </dict>
+
+    <dict>
+        <key>Name</key>
+        <string>Sugar Cubes</string>
+        <key>Image</key>
+        <string>Sugar_cubes</string>
+        <key>Des</key>
+        <string>
+Sugar cubes are small, perfectly shaped blocks of sweetness that dissolve easily in hot beverages like tea or coffee. They make serving sugar neat and convenient while adding a touch of elegance to any table setting. Each cube provides a controlled amount of sugar, helping balance flavor without mess. Beyond their practical use, sugar cubes often symbolize hospitality and warmth. Whether used in home kitchens, hotels, or cafés, they bring a classic charm to every cup served. Their simplicity and usefulness remind us how even the smallest things can make daily rituals more enjoyable.
+        </string>
+    </dict>
+
+</array>
+</plist>
