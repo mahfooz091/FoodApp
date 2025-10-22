@@ -48,7 +48,3 @@ It displays a list of delicious foods from a property list file and shows detail
 
 ## 👨‍💻 Author
 **Mahfooz Alam** 
-
----
-
-⭐ **If you like this project, please give it a star on GitHub!**
